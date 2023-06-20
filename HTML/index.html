@@ -1,0 +1,109 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link href="https://fonts.googleapis.com/css?family=Montez&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../CSS/common.css">
+    <link rel="stylesheet" href="../CSS/index.css">
+</head>
+<body>
+    <div class="header-container">
+     <!--Header starts here-->
+     <div class="Header">
+        <div class="logo-container">
+            <p class="logo">Scribbler</p>
+            <p class="logo-subheading">Explore, Imagine, Create</p>
+        </div>
+        <div>
+            <input class="header-button" type="button" onclick="" value="Sign Up">
+            <input class="header-button" type="button" onclick="" value="Sign In">
+        </div>
+     </div>
+      <!--Header ends here-->
+
+
+      <!--Home page starts here-->
+      <div class="post-button-container">
+        <input class="post-button" type="button" onclick="" value="All posts">
+        <input class="post-button" type="button" onclick="" value="Create posts">
+
+      </div>
+      <!--Home page ends here-->
+      <!--SignUp page starts here-->
+        <div id="signUpModal" class="modal">
+        <div class="Modal-content">
+            <div class="flex-container">
+                <h1 class="modal-Heading">Get Started</h1>
+                <span onclick=""class ="close-btn">
+                    <i class="fa-fa-times" aria-hidden="'true"></i>
+                </span>
+            </div>
+                    <hr class="modal-horizontal-rule">  
+                    <form class="modal-form">
+                        <label for="name"class="modal-label">Name </label>
+                        <input type="text" class="'modal-textbox" placeholder="Enter your name" name="name" required>
+                        <label for="username"class="modal-label">Username </label>
+                        <input type="text" class="'modal-textbox" placeholder="Enter your username" name="username" required>
+                        <label for="password"class="modal-label">Password</label>
+                        <input type="password" class="'modal-textbox" placeholder="Enter your password" name="password" required>
+                        <label for="confirmPassword"class="modal-label">Confirm Password</label>
+                        <input type="password" class="'modal-textbox" placeholder="Re-enter your password" name="confirmPassword" required>
+                         <button type="submit" class="modal-btn">Sign Up</button>
+                    </form>            
+        </div>
+      </div>
+       <!--SignUp page ends here-->
+
+       <!--SignIn page starts here-->
+       <div id="signInModal" class="modal">
+        <div class="Modal-content">
+            <div class="flex-container">
+                <h1 class="modal-Heading">Welcome Back!</h1>
+                <span onclick=""class ="close-btn">
+                    <i class="fa-fa-times" aria-hidden="'true"></i>
+                </span>
+            </div>
+                    <hr class="modal-horizontal-rule">  
+                    <form class="modal-form">   
+                        <label for="username"class="modal-label">Username </label>
+                        <input type="text" class="'modal-textbox" placeholder="Enter your username" name="username" required>
+                        <label for="password"class="modal-label">Password</label>
+                        <input type="password" class="'modal-textbox" placeholder="Enter your password" name="password" required>
+                        <label for="confirmPassword"class="modal-label">Confirm Password</label>
+                        <input type="password" class="'modal-textbox" placeholder="Re-enter your password" name="confirmPassword" required>
+                         <button type="submit" class="modal-btn">Sign In</button>
+                    </form>
+                    <div class="message">Not a member?
+                    <span class="signup-link" onclick="">Sign Up</span>
+
+                    </div>            
+        </div>
+
+    </div>
+     <!--SignIn page ends here-->
+
+      <!--new create post-->
+     <div id="newPostModal" class="modal">
+       <div class="modal-content new-post-modal-content">
+        <div class="flex-container">
+            <h1 class="modal-heading">Pen your Post</h1>
+            <span onclick="" class="close-btn">
+                <i class="fa-fa-times" aria-hidden="'true"></i>
+            </span>
+        </div>
+        <hr class="modal-horizontal-rule">
+        <form class="modal-form">
+            <label form="postTitle" class="modal-label"></label>
+            <input type="text" class="modal-textbox" placeholder="Enter title of your post" name="postTitle" required>
+            <label for="postContent" class="modal-label">Contents</label>
+            <textarea class="modal-textbox new-post-modal-textarea" placeholder="Enter the contents of your post" name="postContent" required></textarea>
+            <button type="submit" class="modal-btn new-post-modal-btn">Create </button>
+        </form>
+       </div>
+     </div>
+</body>
+</html>
